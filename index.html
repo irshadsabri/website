@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    
+
+
+    header {
+      background-color:palevioletred;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: right;
+      background-color: purple;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  
+
+.search-container {
+  display: flex;
+}
+
+.search-input {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-button {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px px 0;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-button i {
+  margin-right: 2px; 
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 0 0 calc(30% - 20px);
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+p {
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-section {
+  max-width: 300px;
+}
+
+.footer-section h2 {
+  color: #4CAF50;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #4CAF50;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.newsletter-form button {
+  background-color: #4CAF50;
+  color: blue;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.newsletter-form button:hover {
+  background-color: #45a049;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arslan Minhas Tailor</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+        <a href="https://facebook.com">
+          <span>&#x1F4D6;</span> Facebook
+        </a>
+      </p>
+      <p>
+        <a href="https://wa.me/1234567890">
+          <span>&#x1F4F1;</span> WhatsApp
+        </a>
+      </p>
+      
+  </nav>
+  <div class="card-container">
+    <div class="card">
+      <img src="image/img1.jpg" alt="image/img1.jpg">
+      <div class="card-content">
+        <h3>Bridal Dress</h3>
+        <p>Price 5000</p>
+        <button>See More</button>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img6.jpg" alt="image/img6.jpg">
+      <div class="card-content">
+        <h3>Dress Desgin</h3>
+        <p>Price 1200</p>
+        <button>See More</button>
+        
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img3.jpg" alt="image/img3.jpg">
+      <div class="card-content">
+        <h3>Dress Desgin</h3>
+        <p>price 1500</p>
+        <button>See M0re</button>
+        
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="image/salwar.png" alt="image/salwar.png">
+      <div class="card-content">
+        <h3>DRess Desgin Stacking</h3>
+        <p>price 2000</p>
+        <button>See More</button>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img5.jpg" alt="image/img5.jpg">
+      <div class="card-content">
+        <h3>Frog desgin</h3>
+        <p>Price 2000</p>
+        <button>See More</button>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img7.png" alt="image/img7.png">
+      <div class="card-content">
+        <h3>Gents & lendies Both </h3>
+        <p>Confortable Price</p>
+        <button>See More</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="image/img8.png" alt="image/img8.png">
+      <div class="card-content">
+        <h3>Both Dress</h3>
+        <p>Depend On Dress.</p>
+        <button>See More</button>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img9.png" alt="image/img9.png">
+      <div class="card-content">
+        <h3>Both Dress</h3>
+        <p>Depend On Dress.</p>
+        <button>See More</button>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img10.png" alt="image/img10.png">
+      <div class="card-content">
+        <h3>Kid Dress</h3>
+        <p>Price 1700</p>
+        <button>See More</button>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="image/img11.jpg" alt="image/img11.jpg">
+      <div class="card-content">
+        <h3>Pant cort</h3>
+        <p>Price 6000.</p>
+        <button>See More</button>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img12.jpg" alt="image/img12.jpg">
+      <div class="card-content">
+        <h3>pant cort office </h3>
+        <p>Price 8000.</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img3.jpg" alt="image/img3..jpg">
+      <div class="card-content">
+        <h3>Bridal Frog</h3>
+        <p>Price 6000.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="image/img14.jpg" alt="image/img14.jpg">
+      <div class="card-content">
+        <h3>beautiful Dress</h3>
+        <p>Price 4000</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img16.jpg" alt="image/img16.jpg">
+      <div class="card-content">
+        <h3>Dress</h3>
+        <p>Price 1200.</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="image/img15 (1).jpg" alt="image/img15 (1).jpg">
+      <div class="card-content">
+        <h3>Price 1200 3</h3>
+        <p>This is the content for card 3.</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Contact Us</h2>
+        <p>Email: Hibaarslan939@gmail.com</p>
+        <p>Phone: 03042654138</p>
+      </div>
+      <div class="footer-section">
+        <h2>Follow Us</h2>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#"class="WhatsApp">WhatsApp</a>
+        </div>
+        <div class="footer-section">
+          <h2>ShopAddress</h2>
+          <p>Subscribe to our Shopaddress for updates.</p>
+          <p>Azam Town Near Fatima Dentail coolage and hospital Main road</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="goodbye-message">
+            <p>
+              Arslan is a young & spirited website that aims to provide hassle-free and enjoyable online tailoring experience with best quality work. We offer free measurements, pick-up, and delivery service with quality and on-time delivery.
+              
+              </p>
+            <h1>Goodbye!</h1>
+            <p>Thank you for visiting our website. We hope to see you again soon!</p>
+          </div>
+        
+  
+        
+    
+        <footer>
+        
+         
+          
+        </footer>
+    
+    
+
+
+  
+  </footer>
+
+  
+  
+</body>
+</html>

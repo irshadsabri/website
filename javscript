@@ -1,0 +1,45 @@
+<script>
+    
+        // You can add JavaScript code here if you need interactivity in your header
+// For example, you might want to toggle a menu on small screens
+
+// Example: Toggle the navigation menu on small screens
+const navToggle = document.getElementById('nav-toggle');
+const navList = document.getElementById('nav-list');
+
+if (navToggle && navList) {
+  navToggle.addEventListener('click', () => {
+    navList.classList.toggle('show');
+  });
+}
+
+        // Card data
+        const cards = [
+            { imageUrl: 'C:\Users\pc\Desktop\Website\img1.jpg', title: 'Card 1', description: 'This is card 1.' },
+            { imageUrl: 'https://placekitten.com/201/150', title: 'Card 2', description: 'This is card 2.' },
+            // Add more cards as needed
+        ];
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.body;
+
+            cards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+
+                const imageElement = document.createElement('img');
+                imageElement.src = card.imageUrl;
+                cardElement.appendChild(imageElement);
+
+                const contentElement = document.createElement('div');
+                contentElement.className = 'card-content';
+                contentElement.innerHTML = `
+                    <h3>${card.title}</h3>
+                    <p>${card.description}</p>
+                `;
+                cardElement.appendChild(contentElement);
+
+                container.appendChild(cardElement);
+            });
+        });
+    </script>
